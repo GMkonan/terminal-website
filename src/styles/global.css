@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, ul, ol, dl, dt, dd, pre {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    min-width: 100%;
+    background-color: #181926;
+    /* margin: 0 8px; */
+}
+
+#container {
+    height: 100%;
+    /* background-color: #181926; #24273a; */
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Fira Code', monospace, Raleway, 'sans-serif';
+}
+
+pre {
+    /* color: #8aadf4; */
+    color: #b7bdf8;
+}
+
+.presentation-text {
+    color: #fffffe;
+}
+
+#line {
+    display: flex;
+    position: relative;
+    color: #cad3f5;
+}
+
+input {
+    /* Remove textarea styles */
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none; /* remove resize handle on bottom right */
+    
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    /* width: 100%; */
+    margin: 0;
+    margin-left: 8px;
+    /* height: 32px; */
+    height: 24px;
+    
+    
+}
+input:focus{
+    caret-color: transparent;
+}
+
+@keyframes blinkAnimation {
+     50% {
+        opacity: 0;
+     }
+}
+
+.Blink::before{
+    content: '';
+    position: absolute;
+    margin-left: 8px;
+    top: 3px;
+    height: 23px;
+    width: 12px;
+    background-color: #fff;
+    opacity: 1;
+    z-index: 5;
+    animation: blinkAnimation 1s linear infinite 
+    
+}
+
+.title {
+    display: flex;
+    position: relative;
+    color:#cad3f5;
+    font-weight: 600;
+}
+
+.yellow {
+    color: #eed49f;
+}
+
+.blue {
+    color: #91d7e3;
+}
+
+.green {
+    color: #a6da95;
+}
+
+.bold-purple {
+    color: #c6a0f6;
+    font-weight: 600;
+}
+
+.bold-blue {
+    color: #b7bdf8;
+    font-weight: 600;
+}
+
+.bold-green {
+    color: #a6da95;
+    font-weight: 600;
+}
+
+.bold-red {
+    color: #ed8796;
+    font-weight: 600;
+}
+
+.response {
+    color:#a6da95;
+}
+
+.new-line {
+    display: block;
+    color: #fffffe;
+}
+
+a {
+    outline: none;
+    color: #a6da95;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #a6da95;
+    color: #363a4f;
+}

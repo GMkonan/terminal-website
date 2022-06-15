@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Terminal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./src/styles/global.css">
+        <!-- <script src="./index.js"></script> -->
+    </head>
+    <body>
+        <div id="container">
+            <pre class="presentation">
+  _______ .___  ___.  __  ___   ______   .__   __.      ___      .__   __. 
+ /  _____||   \/   | |  |/  /  /  __  \  |  \ |  |     /   \     |  \ |  | 
+|  |  __  |  \  /  | |  '  /  |  |  |  | |   \|  |    /  ^  \    |   \|  | 
+|  | |_ | |  |\/|  | |    <   |  |  |  | |  . `  |   /  /_\  \   |  . `  | 
+|  |__| | |  |  |  | |  .  \  |  `--'  | |  |\   |  /  _____  \  |  |\   | 
+ \______| |__|  |__| |__|\__\  \______/  |__| \__| /__/     \__\ |__| \__|                  
+            </pre>
+            <div class="presentation-text">
+                Terminal project that I made trying to replicate my own terminal
+                <br />
+                Use 'help' command to check available commands!
+            </div>
+            <div id="terminal">
+            </div>
+                <div class="title">
+                    <div class="yellow">guest&nbsp;</div>
+                    <div>in&nbsp;</div>
+                    <div class="blue" id="dir">~/</div>
+                </div>
+                <div id="line">
+                    <label for="input">
+                        <div>
+                            <div class="green">❯</div>
+                        </div>
+                    </label>
+                    <div class="Blink"></div>
+                    <input id="input" autocapitalize="off" autocomplete="off" spellcheck="false" class="Ter_Input" autofocus></input>
+                </div>
+            
+        </div>
+        <script src="./src/js/commands.js"></script>
+        <script src="./src/js/main.js"></script>
+    </body>
+</html>
