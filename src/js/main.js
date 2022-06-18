@@ -1,27 +1,25 @@
-// import {whois} from './commands'
-
 const terminal = document.getElementById('terminal')
 const currentDirectory = document.getElementById('dir')
 const input = document.getElementById('input')
-let Input_Cnt=0;
+let inputCounter=0;
 
 function Ternimal_Input(event){
-	const Focus_ele=document.activeElement.className;
+	const focusElement = document.activeElement.className;
 	//const Text=document.querySelector(".Ter_Input").clientWidth;
 
-	const Is_Typing=(Focus_ele == "Ter_Input");
+	const isTyping = (focusElement == "Ter_Input");
     let isPrintableKey = event.key.length === 1;
-	if(Is_Typing ){
-		if( (event.code== 'Backspace' ) ){
-			if(Input_Cnt>0){
-				Input_Cnt=Input_Cnt-1;
-				document.querySelector(".Blink").style.transform= "translateX("+(Input_Cnt*12).toString()+"px)";
+	if(isTyping){
+		if(event.code == 'Backspace'){
+			if(inputCounter > 0){
+				inputCounter = inputCounter-1;
+				document.querySelector(".Blink").style.transform= "translateX("+(inputCounter*12).toString()+"px)";
 			}
 			
 		}
 		else if(isPrintableKey){
-			Input_Cnt=Input_Cnt+1;
-			document.querySelector(".Blink").style.transform= "translateX("+(Input_Cnt*12).toString()+"px)";
+			inputCounter=inputCounter+1;
+			document.querySelector(".Blink").style.transform= "translateX("+(inputCounter*12).toString()+"px)";
 		}
 	}
 }
@@ -96,7 +94,7 @@ const addOldCommandLine = () => {
 const resetCommand = () => {
     input.value = ''
     document.querySelector(".Blink").style.transform= "translateX("+(1).toString()+"px)";
-    Input_Cnt=0;
+    inputCounter=0;
 }
 
 //command functions

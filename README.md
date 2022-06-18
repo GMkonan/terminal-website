@@ -9,5 +9,4 @@ I just saw a video of someone creating a terminal and decided to give it a shot!
 
 ### Todo's
 
-- Mention spaceship as the zsh theme in the `theme` command
 - add this project as a subpath to your website (/terminal)

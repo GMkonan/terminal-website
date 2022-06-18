@@ -14,6 +14,10 @@ html, body {
     /* margin: 0 8px; */
 }
 
+p {
+    line-height: 28px;
+}
+
 #container {
     height: 100%;
     /* background-color: #181926; #24273a; */
