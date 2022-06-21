@@ -1,9 +1,19 @@
 const terminal = document.getElementById('terminal')
+const container = document.getElementById('container')
 const currentDirectory = document.getElementById('dir')
 const input = document.getElementById('input')
 let inputCounter=0;
 
+container.addEventListener('click', () => {
+    input.focus()
+})
+
 function Ternimal_Input(event){
+    //prevent Tab making input loose focus
+    if(event.key === 'Tab') {
+        event.preventDefault();
+        input.focus();
+    }
 	const focusElement = document.activeElement.className;
 	//const Text=document.querySelector(".Ter_Input").clientWidth;
 
